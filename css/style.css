@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Topo do site*/
+
+#topo__site{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(168, 9, 9);
+    padding: 20px 0px;
+    gap: 32px;
+}
+#logo{
+    color: white;
+    padding: 0px 20px;
+}
+
+#nav__topo ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+#nav__topo ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#nav__topo ul li a:hover{
+    border-bottom:4px solid  black;
+    transition: 0.5s;
+    color: black;
+}
+
+#openCart{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+   margin: 0px 20px;
+}
+
+
+
