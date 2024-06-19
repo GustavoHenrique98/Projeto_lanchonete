@@ -13,7 +13,7 @@ body,html{
     display: grid;
     width: 100%;
     grid-template-columns: 40% 55% 3%;
-    background: red;
+    background-color: rgb(199, 4, 4);
     padding: 20px 0px;
     align-items: center;
 }
@@ -70,7 +70,7 @@ body,html{
     transform: translate(-50%,-50%);
     padding: 10px;
     font-size: 1.2rem;
-    background: rgb(199, 4, 4);
+    background-color: rgb(199, 4, 4);
     color: white;
     border-radius: 7px;
     text-transform: uppercase;
