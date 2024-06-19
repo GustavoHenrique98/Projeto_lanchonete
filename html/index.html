@@ -13,7 +13,7 @@
 </head>
 <body>
     <header id="topo__site">
-        <h1 id="logo">Lanchonete</h1>
+        <h1 id="logo">oPastelão</h1>
         <nav id="nav__topo">
             <ul>
                 <li> <a href="#">Home</a> </li>
@@ -29,25 +29,71 @@
         <div id="cart__products__container">
             
         </div>
-
-        <button id="sendRequest">encaminhar pedido</button>
+        <div>
+            Total: R$<p id="total">0</p>
+        </div>
+        <button id="sendRequest">encaminhar pedido <i class="fa-brands fa-whatsapp"></i></button>
         <button id="closeCart">fechar carrinho</button>
     </aside>
     <main>
         <section id="products__section">
-          <h2 id="section sign">Salgados</h2>
-            <div>
+          <h2 id="section__sign">Salgados</h2>
+            <div id="itens__container">
                 <article class="product__container">
                     <header>
-                        <h3>Coxinha</h3>
+                        <h3 class="product__name">Coxinha</h3>
                     </header>
-                        <img src="" alt="coxinha de frango">
+                        <img src="../img/coxinha.jpg" alt="coxinha de frango" class="product__img">
                         
                         <div class="products__text__container">
                             <p class="product__description">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, dicta.
+                               Coxinha de frango saborosa e recheada com catupiry
                             </p>
                         </div>
+
+                        <p>
+                            R$<span class="product__price">5,00</span>
+                        </p>
+                    <footer>
+                        <button class="add__cart"><i class="fa-solid fa-cart-plus"></i>Adicionar no carrinho</button>
+                    </footer>
+                </article>
+
+                <article class="product__container">
+                    <header>
+                        <h3 class="product__name">Hamburger</h3>
+                    </header>
+                        <img src="../img/hamburger.jpg" alt="coxinha de frango" class="product__img">
+                        
+                        <div class="products__text__container">
+                            <p class="product__description">
+                                Hamburguer saboroso cheio de colesterol
+                            </p>
+                        </div>
+
+                        <p>
+                            R$<span class="product__price">7,50</span>
+                        </p>
+                    <footer>
+                        <button class="add__cart"><i class="fa-solid fa-cart-plus"></i>Adicionar no carrinho</button>
+                    </footer>
+                </article>
+
+                <article class="product__container">
+                    <header>
+                        <h3 class="product__name">Pastel</h3>
+                    </header>
+                        <img src="../img/pastel.jpg" alt="coxinha de frango" class="product__img">
+                        
+                        <div class="products__text__container">
+                            <p class="product__description">
+                               Pastel caro mas é gourmet então tá tudo certo!
+                            </p>
+                        </div>
+
+                        <p>
+                            R$<span class="product__price">12,00</span>
+                        </p>
                     <footer>
                         <button class="add__cart"><i class="fa-solid fa-cart-plus"></i>Adicionar no carrinho</button>
                     </footer>
