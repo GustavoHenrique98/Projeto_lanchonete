@@ -1,26 +1,22 @@
-let btnOpen = document.getElementById('openCart');
-let btnClose = document.getElementById('closeCart');
-let btnEncaminahr = document.getElementById('sendRequest');
-let cart = document.getElementById('cart');
+function getDOM(query){
+    return document.getElementById(query);
+}
+const cart={
+    cart__container:getDOM('cart'),
+    cart__produtcs:getDOM('cart__products'),
+    btn_open:getDOM('openCart'),
+    btn_close:getDOM('close__cart'),
+    btn_send:getDOM('send__request')
 
-btnOpen.addEventListener('click', () => {
-    cart.style.display = 'block';
-    setTimeout(() => {
-        cart.style.width = '30%'; 
-    }, 10); 
-    setTimeout(()=>{
-        btnClose.style.display="block";
-        btnEncaminahr.style.display="block"
+}
 
-    },800)
+cart.btn_open.addEventListener('click',()=>{
+    cart.cart__container.style.display="block";
 });
 
-btnClose.addEventListener('click', () => {
-    cart.style.width = '0%';
-    btnClose.style.display="none"
-    btnEncaminahr.style.display="none"
-    setTimeout(() => {
-        cart.style.display = 'none';
-    }, 800);
-
+cart.btn_close.addEventListener('click',()=>{
+    cart.cart__container.style.display="none";
 });
+
+
+
